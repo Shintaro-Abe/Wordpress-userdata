@@ -2,7 +2,7 @@
 ## 使用について
 * __AmazonLinux2023は非対応。AmazonLinux2での使用を推奨。__
     * AmazonLinux2023で使用できるスクリプトを作成中。
-* __SystemsManager ParameterStoreにあらかじめパラメータを設定。
+* __SystemsManager ParameterStoreにあらかじめパラメータを設定。__
 * __EC2のインスタンスプロファイルにIAMロールを設定。__
     * ` ssm:GetParameter `ポリシーが必要。
 
