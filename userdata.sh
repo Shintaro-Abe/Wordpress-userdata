@@ -13,7 +13,7 @@ yum install -y mysql
 export MYSQL_HOST=$RDS_ENDPOINT
 mysql --user=$RDS_ROOT_USER --password=$RDS_ROOT_PASS wordpress <<EOF
 CREATE USER '$MYSQL_USER' IDENTIFIED BY '$MYSQL_PASS';
-GRANT ALL PRIVILEGES ON wordpress.* TO wordpress;
+GRANT ALL PRIVILEGES ON wordpress.* TO $MYSQL_USER;
 FLUSH PRIVILEGES;
 Exit
 EOF
